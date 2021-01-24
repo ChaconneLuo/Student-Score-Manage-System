@@ -611,7 +611,7 @@ int CSVWriten(MYSQL *mysql)										//输出学生信息到csv文件
 void Root_Menu()
 {
 	printf("*************************************************\n");
-	printf("                  Root_ Menu                     \n");
+	printf("                  Root__Menu                     \n");
 	printf("*************************************************\n");
 	printf("                                                 \n");
 	printf("    1.Add Student Information                    \n");
@@ -630,7 +630,7 @@ void Root_Menu()
 void Admin_Menu()
 {
 	printf("*************************************************\n");
-	printf("                  Admin_ Menu                    \n");
+	printf("                  Admin__Menu                    \n");
 	printf("*************************************************\n");
 	printf("                                                 \n");
 	printf("    1.Add Student Information                    \n");
@@ -647,7 +647,7 @@ void Admin_Menu()
 void Normal_Menu()
 {
 	printf("*************************************************\n");
-	printf("                  Normal_ Menu                   \n");
+	printf("                  Normal__Menu                   \n");
 	printf("*************************************************\n");
 	printf("      1.Print student Information                \n");
 	printf("      2.Exit                                     \n");
@@ -660,6 +660,7 @@ void Normal_Do(MYSQL *mysql, char *id)				//账户操作函数
 	int Select;
 	while (1)
 	{
+		system("cls");
 		Normal_Menu();
 		scanf("%d", &Select);
 		switch (Select)
@@ -681,6 +682,7 @@ void Admin_Do(MYSQL *mysql)
 	char id[100];
 	while (n)
 	{
+		system("cls");
 		Admin_Menu();
 		scanf("%d", &Select);
 		switch (Select)
@@ -723,6 +725,7 @@ void Root_Do(MYSQL *mysql)
 	char id[100];
 	while (n)
 	{
+		system("cls");
 		Root_Menu();
 		scanf("%d", &Select);
 		switch (Select)
